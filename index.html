@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/12d884e548.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <a href="#header" id="top"
+    ><i class="fa-solid fa-circle-up"></i></a
+  >
+    <!-- ------------Header------------  -->
+    <div id="header">
+      <div class="container">
+        <nav>
+          <i class="fa-solid fa-bars menu" onclick="openmenu()"></i>
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+        </nav>
+        <div class="header-text">
+          <h1>Hi there,<br />I'm <span>Vaibhavi Khalangre.</span></h1>
+          <span id="element">Web Developer</span><br />
+          <a href="https://github.com/VaibhaviKhalangre" class="github"
+            ><i class="fa-brands fa-github"></i>Github</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- ----------About--------------  -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <div class="video-container">
+              <video autoplay muted loop>
+                <source src="./Utils/bg.mp4" type="video/mp4" />
+              </video>
+              <div class="caption">
+                <p>1&nbsp;&nbsp;class <b>Person</b></p>
+                <p>2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; constructor() {</p>
+                <p>
+                  3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; this.name = "<b
+                    >Vaibhavi Khalangre</b
+                  >";
+                </p>
+                <p>
+                  4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; this.traits =
+                  ["<b>Programming</b>", "<b>DEV</b>"];
+                </p>
+                <p>
+                  5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; this.age = new
+                  Date().getFullYear() - 2005;
+                </p>
+                <p>6&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</p>
+                <pre>7&nbsp;&nbsp;}</pre>
+              </div>
+            </div>
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title"><i class="fas fa-user-alt"></i> About me</h1>
+            <p>
+              I am a computer science student pursuing B.E. from JSPM ICOER,Wagholi. I
+              am specialized in DSA with C++, have solved 500+ problems on
+              leetcode. I have also developed skills in MERN
+              Stack Web development and Data Science ML/AI with many personal projects that are
+              available on github. Explore my work and feel free to reach out!
+            </p>
+            <div class="about_btn">
+            <a href="Utils/Resume.pdf" download class="btn2"
+              ><i class="fa-solid fa-download"></i> Resume</a
+            >
+            <a
+              href="https://www.linkedin.com/in/vaibhavi-khalangre-1a274b23b/"
+              download
+              class="btn2"
+              ><i class="fa-brands fa-linkedin"></i> Linkedin</a
+            >
+            <a
+              href="https://leetcode.com/u/Vaibhavi_2025/"
+              download
+              class="btn2"
+              ><i class="fa-solid fa-code"></i>Leetcode</a
+            ></div>
+
+            <div class="tab-titles">
+              <p
+                class="tab-links active-link"
+                onclick="opentab('education')"
+                id="font"
+              >
+                Education
+              </p>
+              <p
+                class="tab-links"
+                onclick="opentab('certifications')"
+                id="font"
+              >
+                Certifications
+              </p>
+            </div>
+            <div class="tab-contents active-tab" id="education">
+              <ul>
+                <li>
+                  <div class="tab_head">
+                    <span>B.E.(CSE)</span><br />
+                    <p class="">2023-2026</p>
+                  </div>
+                  <div class="tab_head">
+                    JSPM imperial College Of Engineering And Research Wagholi,Pune
+                    <p>8.79</p>
+                  </div>
+                </li>
+                <li>
+                  <div class="tab_head">
+                    <span>Diploma</span><br/>
+                    <p class="">2021-2023</p>
+                  </div>
+                  <div class="tab_head">
+                    Puranmal Lahoti Government Polytechnic, Latur
+                    <p>86.25%</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="certifications">
+              <ul>
+                <li>
+                  <div class="tab_head"><span>ReactJS course</span><br /></div>
+                  Infosys Springboard
+                </li>
+                <li>
+                  <div class="tab_head">
+                    <span> Data Structures and Algorithm guided path</span
+                    ><br />
+                  </div>
+                  Coding Ninjas
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-------------------------- Experience------------------------- -->
+
+    <section id="experience" class="experience-section">
+      <div class="container">
+        <h2 class="sub-title pro">
+          <i class="fa fa-briefcase"></i> Experience
+        </h2>
+        <div class="experience-list">
+          <div class="experience-item">
+            <h2>Microsft Mobile Innovation Lab</h2>
+            <h4>April 2023 - Present</h4>
+            <h4 class="position">Programmer</h4>
+            <ul>
+              <li>
+                <span class="bold">Mentorship & Skill Development: </span> Guide
+                junior students by mentoring them in coding, data structures,
+                and problem-solving.
+              </li>
+              <li>
+                <span class="bold">Technical Event Organization:</span> Conduct
+                coding contests on HackerRank, aptitude tests on Unstop,and
+                organizing workshops on development, competitive programming,
+                and industry-relevant technologies.
+              </li>
+            </ul>
+          </div>
+          <div class="experience-item">
+            <h2>Winter Of Blockchain</h2>
+            <h4>July 2024 - September 2024</h4>
+            <h4 class="position">Web Developer</h4>
+            <ul>
+              <li>
+                <span class="bold">Website Management & Updates:</span>
+                Maintained the competition’s official website, ensuring
+                up-to-date project listings, smooth navigation, and an optimal
+                user experience.
+              </li>
+              <li>
+                <span class="bold">Project Coordination: </span> Managed project
+                listings, raised relevant issues, and facilitated contributor
+                engagement by keeping Git repositories well-organized and
+                updated.
+              </li>
+              <li>
+                <span class="bold"
+                  >High Impact Contribution & Recognition:
+                </span>
+                Completed the majority of assigned tasks within the team,
+                earning appreciation for efficiency and proactive
+                problem-solving.
+              </li>
+            </ul>
+          </div>
+          <div class="experience-item">
+            <h2>Infits</h2>
+            <h4>May 2024 - July 2024</h4>
+            <h4 class="position">Web Developer Intern</h4>
+            <ul>
+              <li>
+                <span class="bold">UI Development: </span>Designed and developed
+                the entire project’s user interface using React and various
+                libraries, ensuring a seamless and visually appealing
+                experience.
+              </li>
+              <li>
+                <span class="bold">Cross-Team Collaboration: </span> Worked
+                closely with ML developers and designers to integrate AI-driven
+                features and maintain design consistency across the platform.
+              </li>
+              <li>
+                <span class="bold">Web Scraping & Email Automation: </span>
+                Implemented web scraping techniques and automated email fetching
+                to enhance data collection and user engagement.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- -----------------------Skills--------------------- -->
+    <div id="skills" class="skills">
+      <div class="container">
+        <h2 class="sub-title pro">
+          <i class="fas fa-laptop-code"></i> My Skills
+        </h2>
+
+        <div class="s_container">
+          <div class="row" id="skillsContainer"></div>
+        </div>
+      </div>
+    </div>
+
+     
+     
+    <!-- ------------------Projects-------------------  -->
+    <div id="projects">
+      <div class="container">
+        <h1 class="sub-title pro">
+          <i class="fas fa-laptop-code"></i> My Projects
+        </h1>
+        <div class="wrap">
+          <img src="Utils/left-arrow.png" id="backBtn" />
+          <div class="work-list">
+            <div class="div2">
+              <div class="work">
+                <img src="Utils/Prep_AI.webp" alt="Perp-AI" />
+                <div class="layer">
+                  <h3>Perp-AI</h3>
+                  <p>
+                    Crafted AI-driven personalized mock interviews based on
+                    diverse industry roles and skill sets; generated insightful
+                    reports allowing users to pinpoint strengths and develop
+                    improvement strategies for future interviews.
+                  </p>
+                  <a href="https://prep-ai-nu.vercel.app/" target="_blank"
+                    ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                  ></a>
+                </div>
+              </div>
+              <div class="work">
+                <img src="Utils/Health_Spot.png" alt="Health-Spot" />
+                <div class="layer">
+                  <h3>Health-Spot</h3>
+                  <p>
+                    A MERN stack doctor appointment project facilitates seamless
+                    booking and management of appointments between patients and
+                    doctors, integrating MongoDB, Express.js, React, and Node.js
+                    for robust functionality.
+                  </p>
+                  <a href="https://healthspot.onrender.com/" target="_blank"
+                    ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                  ></a>
+                </div>
+              </div>
+              <div class="work">
+                <img src="Utils/Blog.png" alt="Blog-Stream" />
+                <div class="layer">
+                  <h3>Blog-Stream</h3>
+                  <p>
+                    Developed a blogging MERN website which can add, update,
+                    delete posts and users along with likes and comments
+                    functionality. Also admin and user have different
+                    dashboards.
+                  </p>
+                  <a href="https://github.com/VaibhaviKhalangre/mern-blog1" target="_blank"
+                    ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="div2 lower">
+            
+              <div class="work">
+                <img src="Utils/Connectify.png" alt="Connectify" />
+                <div class="layer">
+                  <h3>Connectify-Let's Chat</h3>
+                  <p>
+                    Innovated a user-centric chat application, fostering
+                    seamless communication through intuitive design and
+                    real-time messaging. Elevate your connections with a modern
+                    and engaging chat experience.
+                  </p>
+                  <a href="https://connectifychat.netlify.app/" target="_blank"
+                    ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                  ></a>
+                </div>
+              </div>
+
+              <div class="work">
+                <img src="Utils/InsightSurf.png" alt="InsightSurf" />
+                <div class="layer">
+                  <h3>Insight Surf- A Web Browsing Application</h3>
+                  <p>
+                    Developed a web browsing application which gives search
+                    results and image resuls for all types of queries and
+                    implemented voice search also.
+                  </p>
+                  <a href="https://insight-surf.netlify.app/" target="_blank"
+                    ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="div2 lower">
+              <div class="work">
+                <img src="Utils/currency.png" alt="CurrencyConvertor" />
+                <div class="layer">
+                  <h3>Currency Convertor</h3>
+                  <p>
+                    Crafted a dynamic currency converter application,
+                    simplifying global transactions with real-time exchange
+                    rates.
+                  </p>
+                  <a
+                    href="https://convert-currency13.netlify.app/"
+                    target="_blank"
+                    ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                  ></a>
+                </div>
+              </div>
+
+
+              
+                   
+              
+            </div>
+          </div>
+          <img src="Utils/right-arrow.png" id="nextBtn" />
+        </div>
+        <a href="https://github.com/VaibhaviKhalangre" class="btn"
+          >See more<i class="fa-solid fa-circle-arrow-right"></i
+        ></a>
+      </div>
+    </div>
+
+    <!-- -----------Contact--------  -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Get in Touch</h1>
+            <p><i class="fa-solid fa-envelope"></i>khalangrevaibhavi.com</p>
+            <p><i class="fa-solid fa-phone"></i>9579283896</p>
+            <a href="Utils/Resume.pdf" download class="btn btn2"
+              ><i class="fa-solid fa-download"></i>Download Resume</a
+            >
+          </div>
+          <div class="contact-right">
+            <form
+              action="https://api.web3forms.com/submit"
+              method="POST"
+              autocomplete="off"
+            >
+              <input
+                type="hidden"
+                name="access_key"
+                value="d88b79bb-59c0-43bd-a49e-777e388013f4"
+              />
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Email Address"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="3"
+                placeholder="Your Message"
+              ></textarea>
+              <button class="btn btn2" type="submit">
+                <i class="fa-solid fa-paper-plane"></i>Send Message
+              </button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Made with <i class="fa-solid fa-heart"></i> by Vaibhavi Khalangre</p>
+      </div>
+    </div>
+    
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
